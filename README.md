@@ -1,3 +1,3 @@
 # svg-baker-update
 
-svg-baker update dependencies to new version
+update svg-baker dependencies to new version
