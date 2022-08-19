@@ -1,0 +1,39 @@
+{
+  "name": "svg-baker-update",
+  "version": "1.9.9",
+  "description": "",
+  "author": "JetBrains",
+  "homepage": "https://github.com/lip8up/svg-baker-update",
+  "license": "MIT",
+  "repository": "git@github.com:lip8up/svg-baker-update.git",
+  "main": "lib/compiler.js",
+  "files": [
+    "lib/",
+    "namespaces.js",
+    "README.md"
+  ],
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "clone": "^2.1.2",
+    "he": "^1.2.0",
+    "image-size": "^1.0.2",
+    "loader-utils": "^3.2.0",
+    "merge-options": "^3.0.4",
+    "micromatch": "^4.0.5",
+    "postcss": "^8.4.16",
+    "postcss-prefix-selector": "^1.16.0",
+    "posthtml-rename-id": "^1.0.12",
+    "posthtml-svg-mode": "^1.0.3",
+    "query-string": "^7.1.1",
+    "traverse": "^0.6.6"
+  },
+  "scripts": {
+    "lint": "eslint lib test",
+    "test": "nyc --reporter=lcov mocha --recursive -r test/mocha-setup.js"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0"
+  }
+}
